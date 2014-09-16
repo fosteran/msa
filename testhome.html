@@ -16,8 +16,9 @@
 	<link rel="icon" href="http://msa.medicine.iu.edu/files/4514/0552/4054/iu-favicon.ico" type="image/x-icon" />
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.iu.edu/style.css?family=BentonSans:regular,bold%7CBentonSansCond:regular%7CGeorgiaPro:regular" rel="stylesheet">
-	<script type="text/javascript" src="http://msa.medicine.iu.edu/concrete/js/jquery.js"></script>
-	<link href="ideal-image-slider.css" rel="stylesheet" />
+	
+	<link href="https://www.iu.edu/~iusom/vendor/css/ideal-image-slider.css" rel="stylesheet" />
+	<link href="https://www.iu.edu/~iusom/vendor/css/ideal-image-slider-theme.css" rel="stylesheet" />
 	<link href="msa-custom-styles.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="http://msa.medicine.iu.edu/packages/content_around_image/blocks/content_around_image/view.css" />
 	<link rel="stylesheet" type="text/css" href="http://msa.medicine.iu.edu/concrete/blocks/slideshow/view.css" />
@@ -179,10 +180,10 @@
 				</div>
 				-->
 				
-				<div id="msa-slider" class="msa_main">
-					<img src="image/slider-1.jpg" />
-					<img data-src="image/slider-2.jpg" src="" />
-					<img data-src="image/slider-3.jpg" src="" />
+				<div id="msaslider" class="msa_main">
+					<img src="image/slider-1.jpg"  alt="White Coat Ceremony" />
+					<img data-src="image/slider-2.jpg" src=""  alt="Discussion Group" />
+					<img data-src="image/slider-3.jpg" src=""  alt="Practicing on a mannequin" />
 				</div>
 				<div class="sidebar-boxes">
 					<ul>
@@ -392,16 +393,18 @@
 
  </div>
 		<!--<script type='text/javascript' src='/packages/nexxt/themes/nexxt/js/combine.min.js.jgz' defer></script>-->
+		<script type="text/javascript" src="http://msa.medicine.iu.edu/concrete/js/jquery.js"></script>
 	<script type='text/javascript' src='http://msa.medicine.iu.edu//packages/nexxt/themes/nexxt/js/combine_new.js' defer></script>
 	<script type="text/javascript" src="http://msa.medicine.iu.edu//packages/nexxt/themes/nexxt/js/jquery.lightbox-0.5.js" defer></script>
-	<script type="text/javascript" src="ideal-image-slider.min.js"></script>
+	<script src="https://www.iu.edu/~iusom/vendor/js/ideal-image-slider.min.js"></script>
+<script src="https://www.iu.edu/~iusom/vendor/js/ideal-image-slider-captions.js"></script>
     	<script type="text/javascript">
 			var slider = new IdealImageSlider.Slider({
-				selector: '#msa-slider',
+				selector: '#msaslider',
 				height: 350,
-				width: 750,
 				interval: 4000,
 			});
+			slider.addCaptions();
 			slider.start();
 			
 			jQuery(document).ready(function($){

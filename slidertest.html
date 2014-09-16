@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+      Bullet Navigation Extension Demo - Ideal Image Slider
+    </title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>.msa_main {width: 710px;}</style>
+	<link href="https://www.iu.edu/~iusom/vendor/css/ideal-image-slider.css" rel="stylesheet" />
+	<link href="https://www.iu.edu/~iusom/vendor/css/ideal-image-slider-theme.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="msaslider" class="msa_main">
+					<img src="image/slider-1.jpg"  alt="White Coat Ceremony" />
+					<img data-src="image/slider-2.jpg" src=""  alt="Discussion Group" />
+					<img data-src="image/slider-3.jpg" src=""  alt="Practicing on a mannequin" />
+				</div>
+<script src="https://www.iu.edu/~iusom/vendor/js/ideal-image-slider.min.js"></script>
+<script src="https://www.iu.edu/~iusom/vendor/js/ideal-image-slider-captions.js"></script>
+<script>
+var slider = new IdealImageSlider.Slider({
+selector: '#msaslider',
+height: 400,
+interval: 4000,
+});
+slider.addCaptions();
+slider.start();
+</script>
+</body>
+</html>
